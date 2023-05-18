@@ -4,7 +4,7 @@ import os
 
 files = [f for f in os.listdir('.') if os.path.isfile(f)]
 
-# Open the image by specifying the image path.
+# Open the image by specifying the image path by iterating through files
 output_folder = "compressed/"
 for image_path in files:
     if ".jpg" not in image_path:
